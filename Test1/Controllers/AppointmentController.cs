@@ -63,22 +63,4 @@ public class AppointmentController : ControllerBase
         
         return Ok();
     }
-
-    // [HttpPost("procedure")]
-    // public async Task<IActionResult> PutProductInWarehouseProcedure(AppointmentDTO createDto)
-    // {
-    //     // try
-    //     // {
-    //     //     var dto = await _warehouseService.CreateWarehouseProductUsingProcedure(createDto);
-    //     //
-    //     //     return Ok(dto);
-    //     // }
-    //     // catch (Exception e)
-    //     // {
-    //     //     return BadRequest(e.Message);
-    //     // }
-    //
-    // }
-    
-    
 }
