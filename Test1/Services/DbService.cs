@@ -83,7 +83,7 @@ public class DbService
         return await command.ExecuteNonQueryAsync();
     }
     
-    public async Task<List<T>> GetList<T>(string command, Func<SqlDataReader, Task<T>> function, Dictionary<string, object>? parameters = null)
+    public async Task<List<T>> FetchList<T>(string command, Func<SqlDataReader, Task<T>> function, Dictionary<string, object>? parameters = null)
     {
         var result = new List<T>();
 

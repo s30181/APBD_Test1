@@ -31,7 +31,7 @@ public class AppointmentService
             JOIN Service ON Service.service_id = Appointment_Service.service_id
             WHERE Appointment.appointment_id = @id";
 
-        var all = await _dbService.GetList(query, (reader) => Task.FromResult(new
+        var all = await _dbService.FetchList(query, (reader) => Task.FromResult(new
         {
             Id = reader.GetInt32(reader.GetOrdinal("AppointmentId")),
             Date = reader.GetDateTime(reader.GetOrdinal("AppointmentDate")),
