@@ -61,6 +61,6 @@ public class AppointmentController : ControllerBase
             .Select(id => (int)id!)
             .ToList());
         
-        return Ok();
+        return Ok("Appointment created");
     }
 }
